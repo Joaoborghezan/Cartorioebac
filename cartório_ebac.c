@@ -132,7 +132,8 @@ int main()
 		printf("Escolha a opção desejada do menu: \n\n");
 		printf("\t1 - Registrar Nomes\n");
 		printf("\t2 - Consultar Nomes\n");
-		printf("\t3 - Deletar Nomes \n\n\n");
+		printf("\t3 - Deletar Nomes \n");
+		printf("\t4 - Sair do Sistema\n\n\n");
 		printf("Digite qual opção você deseja: ");
 		// a função \t serve para dar um tab na interface do programa
 	
@@ -155,6 +156,11 @@ int main()
 			case 3:
 			deletar();
 			break;	
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n\n");
+			return 0;
+			break;
 		
 			default:
 			//usamos default para informar que é diferente do padrão ou nenhuma das opções
